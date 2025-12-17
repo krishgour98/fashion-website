@@ -27,7 +27,7 @@ function App() {
             <Header />
             <div className="pt-16 bg-gray-100 dark:bg-gray-800 min-h-screen">
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/fashion-website" element={<Home />} />
                 <Route path="/men" element={<MenPage />} />
                 <Route path="/women" element={<WomenPage />} />
                 <Route path="/kids" element={<KidsPage />} />

@@ -1,0 +1,73 @@
+// ============================================
+// IMPLEMENTATION GUIDE FOR CART & WISHLIST INTEGRATION
+// ============================================
+
+// Step 1: Import these at the top of EVERY page (MenPage, WomenPage, KidsPage, Accessoriespage, SinglePage, BrandPage, Home)
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext.jsx";
+import { WishlistContext } from "../context/WishlistContext.jsx";
+import { FaShoppingCart, FaHeart } from "react-icons/fa";
+
+// Step 2: Inside your component function, extract these
+const MyPage = () => {
+  const { addToCart } = useContext(CartContext);
+  const { addToWishlist, removeFromWishlist, isInWishlist } = useContext(WishlistContext);
+
+  // Step 3: Create these handler functions
+  const handleAddToCart = (product) => {
+    addToCart(product);
+    alert(`✅ ${product.name} added to cart!`);
+  };
+
+  const handleWishlistToggle = (product) => {
+    if (isInWishlist(product.id)) {
+      removeFromWishlist(product.id);
+      alert(`❌ Removed from wishlist`);
+    } else {
+      addToWishlist(product);
+      alert(`❤️ Added to wishlist!`);
+    }
+  };
+
+  // Step 4: Use in your buttons like this
+
+  // FOR ADD TO CART BUTTON:
+  <button
+    onClick={() => handleAddToCart(product)}
+    className="w-full px-4 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-lg hover:shadow-lg flex items-center justify-center gap-2"
+  >
+    <FaShoppingCart size={18} />
+    Add to Cart
+  </button>
+
+  // FOR WISHLIST BUTTON:
+  <button
+    onClick={() => handleWishlistToggle(product)}
+    className={`p-3 rounded-full transition-all duration-300 ${
+      isInWishlist(product.id)
+        ? "bg-red-500 text-white"
+        : "bg-white text-gray-400 hover:text-red-500"
+    }`}
+  >
+    <FaHeart size={20} />
+  </button>
+};
+
+// ============================================
+// PAGES TO UPDATE:
+// ============================================
+// 1. Home.jsx - Update featured tshirts add to cart/wishlist buttons
+// 2. MenPage.jsx - Update product grid buttons
+// 3. WomenPage.jsx - Update product grid buttons
+// 4. KidsPage.jsx - Update product grid buttons
+// 5. Accessoriespage.jsx - Update product grid buttons
+// 6. SinglePage.jsx - Update add to cart and wishlist buttons
+// 7. BrandPage.jsx - Update product grid buttons
+
+// ============================================
+// PAGES ALREADY DONE:
+// ============================================
+// ✅ WishlistPage.jsx - Uses WishlistContext to display wishlist
+// ✅ CartPage.jsx - Uses CartContext to display cart
+// ✅ Header.jsx - Shows cart and wishlist counts with icons
+// ✅ App.jsx - Wrapped with both CartProvider and WishlistProvider

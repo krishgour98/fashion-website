@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext.jsx';
 import { WishlistProvider } from './context/WishlistContext.jsx';
 import { DarkModeProvider } from './context/DarkModeContext.jsx';
+import 'boxicons/css/boxicons.min.css';
 
 import Header from './Components/Header.jsx';
 import Footer from './Components/Footer.jsx';

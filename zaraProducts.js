@@ -1,0 +1,22 @@
+export const zaraProducts = [
+  { id: 301, name: "Zara Slim Fit Shirt", price: 1299, image: "https://via.placeholder.com/200x250?text=Zara+Shirt+1", description: "Stylish cotton slim fit shirt for men", brand: "Zara" },
+  { id: 302, name: "Zara Casual T-Shirt", price: 999, image: "https://via.placeholder.com/200x250?text=Zara+T-Shirt+2", description: "Comfortable casual t-shirt", brand: "Zara" },
+  { id: 303, name: "Zara Chinos", price: 1599, image: "https://via.placeholder.com/200x250?text=Zara+Chinos+3", description: "Slim fit cotton chinos", brand: "Zara" },
+  { id: 304, name: "Zara Hoodie", price: 1799, image: "https://via.placeholder.com/200x250?text=Zara+Hoodie+4", description: "Warm and stylish hoodie", brand: "Zara" },
+  { id: 305, name: "Zara Denim Jacket", price: 2499, image: "https://via.placeholder.com/200x250?text=Zara+Denim+5", description: "Classic denim jacket", brand: "Zara" },
+  { id: 306, name: "Zara Leather Jacket", price: 4999, image: "https://via.placeholder.com/200x250?text=Zara+Leather+6", description: "Premium leather jacket", brand: "Zara" },
+  { id: 307, name: "Zara Cargo Pants", price: 1399, image: "https://via.placeholder.com/200x250?text=Zara+Cargo+7", description: "Comfortable cargo pants", brand: "Zara" },
+  { id: 308, name: "Zara Polo Shirt", price: 1199, image: "https://via.placeholder.com/200x250?text=Zara+Polo+8", description: "Classic cotton polo", brand: "Zara" },
+  { id: 309, name: "Zara Sweatshirt", price: 1499, image: "https://via.placeholder.com/200x250?text=Zara+Sweatshirt+9", description: "Stylish sweatshirt", brand: "Zara" },
+  { id: 310, name: "Zara Formal Shirt", price: 1799, image: "https://via.placeholder.com/200x250?text=Zara+Formal+10", description: "Perfect for office wear", brand: "Zara" },
+  { id: 311, name: "Zara Slim Jeans", price: 1999, image: "https://via.placeholder.com/200x250?text=Zara+Jeans+11", description: "Modern slim fit jeans", brand: "Zara" },
+  { id: 312, name: "Zara Shorts", price: 899, image: "https://via.placeholder.com/200x250?text=Zara+Shorts+12", description: "Comfortable summer shorts", brand: "Zara" },
+  { id: 313, name: "Zara Bomber Jacket", price: 2799, image: "https://via.placeholder.com/200x250?text=Zara+Bomber+13", description: "Trendy bomber jacket", brand: "Zara" },
+  { id: 314, name: "Zara Cardigan", price: 1599, image: "https://via.placeholder.com/200x250?text=Zara+Cardigan+14", description: "Soft knit cardigan", brand: "Zara" },
+  { id: 315, name: "Zara Sweatpants", price: 1199, image: "https://via.placeholder.com/200x250?text=Zara+Sweatpants+15", description: "Casual lounge pants", brand: "Zara" },
+  { id: 316, name: "Zara Parka", price: 3999, image: "https://via.placeholder.com/200x250?text=Zara+Parka+16", description: "Warm winter parka", brand: "Zara" },
+  { id: 317, name: "Zara Tank Top", price: 699, image: "https://via.placeholder.com/200x250?text=Zara+Tank+17", description: "Basic cotton tank", brand: "Zara" },
+  { id: 318, name: "Zara Long Coat", price: 5499, image: "https://via.placeholder.com/200x250?text=Zara+Long+Coat+18", description: "Elegant long coat", brand: "Zara" },
+  { id: 319, name: "Zara Windbreaker", price: 1899, image: "https://via.placeholder.com/200x250?text=Zara+Windbreaker+19", description: "Lightweight windbreaker", brand: "Zara" },
+  { id: 320, name: "Zara V-Neck Sweater", price: 1399, image: "https://via.placeholder.com/200x250?text=Zara+V-Neck+20", description: "Stylish v-neck sweater", brand: "Zara" }
+];
